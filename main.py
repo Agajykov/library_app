@@ -7,21 +7,16 @@ def main():
     book2 = Book("How to make the best South Korean Kimchi", "Jeonghu Heo")
     book3 = Book("How to prepare the best Hummus ", "Hassan Mroue")
     
-    member1 = Member("John", "Agajykov",1)
-    member2 = Member("Hassan", "Mroue",2)
-    member3 = Member("Jeonghu", "Heo",3)
+    member1 = Member("John", "Agajykov", 1)
+    member2 = Member("Hassan", "Mroue", 2)
+    member3 = Member("Jeonghu", "Heo", 3)
 	
-    library = Library()
-    library.add_book(book1)
-    library.display_books()
-    member1.borrow_book(book1)
-    member1.show_borrowed_book()
-    
-
-    # 
-    # member1.show_borrowed_book()
-    # # 
-    # library.add_member(member1)
+    # library = Library()
+    # #library.add_member(member1)
+    # library.add_book(member1)
+	
+	
+	# member1.show_borrowed_book()
     # library.add_member(member2)
     # library.add_member(member3)
     # library.display_members()
@@ -37,7 +32,11 @@ def main():
     # library.remove_books(book1)
     # library.display_books()
 
-	
+    
+    # library.add_book(book1)
+    # library.display_books()
+    member1.borrow_book(book1)
+    # member1.show_borrowed_book()
 	
 	
 
