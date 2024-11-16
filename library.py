@@ -30,7 +30,7 @@ class Library:
 		else:
 			for members in self.members:
 				print(members)
-
+	
 	def remove_member(self,member):
 		if member in self.members:
 			self.members.remove(member)
@@ -38,12 +38,10 @@ class Library:
 	#Good to have functions
 
 	def get_number_of_books(self):
-		num_of_books = len (self.books)
-		print(num_of_books )
+		return len(self.books)
 
 	def get_number_of_members(self):
-		num_of_members = len (self.members)
-		print(num_of_members)
+		return len(self.members)
 	
 
 

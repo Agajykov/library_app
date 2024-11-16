@@ -1,16 +1,14 @@
 
 from books import Book
 class Member:
-	_id = None
-	_name = None
-	_lastName = None
-	_borrowed_books = []
-
-	def __init__(self, name, lastName, id):
+	def __init__(self, name, lastName):
 		self._name = name
 		self._lastName = lastName
-		self._id = id
+		self._borrowed_books = []
 		
+	def get_user_info(self):
+		return f"{str(self._name)} {str(self._lastName)}"
+	
 	def borrow_book(self, book):
 		self._borrowed_books.append(book)
 
@@ -21,5 +19,20 @@ class Member:
 			for borrowed_book in self._borrowed_books:
 				print(f"{self._name} borrowed the {borrowed_book}")
 
+	def update_member_lastName(self,last_name):
+		self._lastName = last_name
+
+	def get_name(self):
+		return self._name
+	def get_last_name(self):
+		return self._lastName
+	
+
+	def get_borrowed_books(self):
+		return self._borrowed_books	
+
+	#Overiding in case object will be called directly
 	def __str__(self) -> str:
-		return f"Member: {self._name} {self._lastName}, ID: {self._id}"
+		return f"Member: {self._name} {self._lastName}"
+
+	 	
