@@ -55,9 +55,13 @@ def main():
     library.display_books()
     print(f"\nRemoved Book: {book1.get_book_info()} ")
     library.get_number_of_books()
+    
+    print("\n=========================================== Update User Info ===========================================\n")
+    member2.update_user_name_and_lastName("Davi", "Becker")
+    library.display_members()
+
     print("\n=========================================== Library App ===========================================")
     
-	
 #In case file will be called from outside
 if __name__ == "__main__":
     main()

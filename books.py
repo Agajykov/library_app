@@ -8,3 +8,7 @@ class Book:
 	
 	def get_book_info(self):
 		return f"{str(self.title)} {str(self.author)}"
+	
+	def update_book(self,title,author):
+		self._name = title
+		self._lastName = author

@@ -19,7 +19,8 @@ class Member:
 			for borrowed_book in self._borrowed_books:
 				print(f"{self._name} borrowed the {borrowed_book}")
 
-	def update_member_lastName(self,last_name):
+	def update_user_name_and_lastName(self,name,last_name):
+		self._name = name
 		self._lastName = last_name
 
 	def get_name(self):
